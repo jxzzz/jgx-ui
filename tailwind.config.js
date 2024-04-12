@@ -1,8 +1,31 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./docs/index.html', , './packages/**/*.{js,ts,jsx,tsx}'],
+  content: ['./docs/**/*', , './packages/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    colors: {
+      blue: '#1fb6ff',
+      purple: '#7e5bef',
+      pink: '#ff49db',
+      orange: '#ff7849',
+      green: '#13ce66',
+      yellow: '#ffc82c',
+      'gray-dark': '#273444',
+      gray: '#8492a6',
+      'gray-light': '#d3dce6',
+      primary: '#2196F3',
+    },
+    fontFamily: {
+      custom: ['Montserrat', 'sans-serif'],
+    },
+    extend: {
+      spacing: {
+        '8xl': '96rem',
+        '9xl': '128rem',
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
+    },
   },
   plugins: [],
 };
